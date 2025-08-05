@@ -6,7 +6,14 @@
     "types": ["node", "express"],
     "rootDir": "src",
     "moduleResolution": "nodenext",
-    "tsBuildInfoFile": "dist/tsconfig.app.tsbuildinfo"
+    "tsBuildInfoFile": "dist/tsconfig.app.tsbuildinfo",
+    "paths": {
+      "@/controllers": ["./src/controllers/index.ts"],
+      "@/models": ["./src/models/index.ts"],
+      "@/routes": ["./src/routes/index.ts"],
+      "@/util": ["./src/util/index.ts"],
+      "@/configs": ["./src/configs/index.ts"]
+    }
   },
   "include": ["src/**/*.ts"],
   "exclude": [
@@ -18,5 +25,10 @@
     "eslint.config.js",
     "eslint.config.cjs",
     "eslint.config.mjs"
+  ],
+  "references": [
+    {
+      "path": "../../shared-types/tsconfig.lib.json"
+    }
   ]
 }
