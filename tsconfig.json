@@ -8,6 +8,12 @@
     },
     {
       "path": "./apps/va-client"
+    },
+    {
+      "path": "./apps/va-backend-e2e"
+    },
+    {
+      "path": "./apps/va-backend"
     }
   ]
 }
